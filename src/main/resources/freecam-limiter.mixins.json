@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "de.freecamlimiter.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"minVersion": "0.8",
+	"client": [
+		"FreecamConfigMixin",
+		"FreeCameraMixin"
+	],
+	"injectors": { "defaultRequire": 0 }
+}

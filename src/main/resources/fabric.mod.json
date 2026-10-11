@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "freecam-limiter",
+	"version": "${version}",
+	"name": "Freecam Limiter",
+	"description": "Keeps the Freecam mod fair on multiplayer servers: the camera collides with blocks and stays within a set distance of your player (default 100 blocks, the server can change it). No limits in singleplayer.",
+	"authors": ["Seey0"],
+	"contact": {
+		"sources": "https://github.com/Seey00/freecam-limiter",
+		"issues": "https://github.com/Seey00/freecam-limiter/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/freecam-limiter/icon.png",
+	"environment": "client",
+	"entrypoints": { "client": [ "de.freecamlimiter.FreecamLimiterClient" ] },
+	"mixins": [ { "config": "freecam-limiter.mixins.json", "environment": "client" } ],
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-networking-api-v1": "*"
+	},
+	"suggests": { "freecam": "*" },
+	"breaks": { "staffel5-freecam": "*" }
+}
